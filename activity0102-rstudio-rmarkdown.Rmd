@@ -2,7 +2,12 @@
 title: "Activity 1.2 - RStudio and R Markdown"
 author: "Abigail Zysk"
 date: "8/26/2019"
-output: html_document
+output: 
+  html_document: 
+    fig_height: 8
+    fig_width: 8
+    highlight: zenburn
+    theme: yeti
 ---
 
 ### Load packages
@@ -66,7 +71,7 @@ ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
 
-The resulting plot is a oval
+The resulting plot is a circle
 
 ```{r}
 circle_data %>%
